@@ -1,0 +1,94 @@
+body{
+    color: rgb(11, 91, 43);
+    font-family: 'Exo 2', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: 16px;
+}
+
+button{
+    margin: 3% 0 0 0;
+    width: 15%;
+    height: 50px;
+    background-color: rgba(125, 182, 206, 0.214);
+    border-radius: 1em;
+    border: 2px solid rgba(110, 168, 195, 0.118);
+    color: rgb(11, 91, 43);
+    font-family: 'Exo 2', sans-serif;
+}
+
+.promise{
+    padding: 0 0 3% 0;
+}
+
+.flex-box{ 
+    display: inline-flex;
+    justify-content: space-between;
+    width: 80%;    
+}
+
+.flex-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 550px;
+    background-color: rgba(205, 239, 255, 0.214);
+    border-radius: 1em;
+    border: 2px solid rgba(110, 168, 195, 0.118);
+}
+
+.accept-program{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 90%;
+    height: 40%;
+    border-radius: 1em;
+    border: 2px solid rgba(110, 168, 195, 0.118);
+}
+
+.accept-program > button{
+    width: 80%;
+    height: 50px;
+    color: white;
+    border: 2px solid rgba(8, 81, 0, 0.118);
+    border-radius: 1em;
+
+}
+
+.price{
+    font-size: 220%;
+}
+
+.free-plan{
+    color: green;
+}
+
+.pro-plan{
+    color: blue;
+}
+
+.premium-plan{
+    color: orange;
+}
+
+.accept-button-free{
+    background-color: green;
+}
+
+.accept-button-pro{
+    background-color: blue;
+}
+
+.accept-button-premium{
+    background-color: orange;
+}   
+.plan{
+    width: 85%;
+}
