@@ -35,26 +35,27 @@ button{
     flex-direction: column;
     align-items: center;
     width: 30%;
-    height: 550px;
+    height: 430px;
     background-color: rgba(205, 239, 255, 0.214);
     border-radius: 1em;
     border: 2px solid rgba(110, 168, 195, 0.118);
 }
 
 .accept-program{
+    line-height: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
     width: 90%;
-    height: 40%;
+    height: 150px;
     border-radius: 1em;
     border: 2px solid rgba(110, 168, 195, 0.118);
 }
 
 .accept-program > button{
     width: 80%;
-    height: 50px;
+    height: 40px;
     color: white;
     border: 2px solid rgba(8, 81, 0, 0.118);
     border-radius: 1em;
