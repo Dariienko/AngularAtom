@@ -1,0 +1,10 @@
+$status:(
+    "dwdq": 12px,
+    "dwad": 23px
+);
+
+@each $key, $value in $status {
+    .status-#{$key}{
+        padding: $value;
+    }
+}

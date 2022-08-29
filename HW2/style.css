@@ -92,3 +92,15 @@ button{
 .plan{
     width: 85%;
 }
+
+@media screen and (max-width: 760px) {
+    .flex-box{
+        flex-flow: column wrap;
+        align-items: center;
+        justify-items: space-between;
+    }
+    .flex-item{
+        margin-top: 5%;
+        width: 60%;
+    }
+}
