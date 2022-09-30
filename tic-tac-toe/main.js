@@ -4,10 +4,10 @@ for(let i = 0; i < bordElement.length; i++){
     bordElement[i].onclick = () => {
         if(bordElement[i].style.backgroundColor == "" ){
             if(counter++ % 2 == 1  ){
-                bordElement[i].style.backgroundColor = "darkslateblue";
+                bordElement[i].style.backgroundColor = "orange";
             }
             else{
-                bordElement[i].style.backgroundColor = "orange";
+                bordElement[i].style.backgroundColor = "darkslateblue";
             }
             console.log("no click");
         }else{
