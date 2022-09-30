@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+            display: flex;
+            flex-flow: row , nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .bord{
+            width: 700px;
+            height: 700px;
+        }
+        .bord_row-section{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 12%;
+        }
+        .bord_row-section_box{
+            width: 100px;
+            height: 100px;
+            border: solid 2px;
+        }
+        .status-bar{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: 350px;
+            background-color: aqua;
+        }
+        .status-bar_conteiner{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 2rem;
+        }
+        .status-bar_conteiner_x-color{
+            margin: 10% 10% 0;
+            background-color: darkslateblue;
+            width: 100px;
+            height: 100px;            
+        }
+        .status-bar_conteiner_o-color{
+            margin: 10% 10% 0;
+            background-color: orange;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section class="bord">
+        <section class="bord_row-section">
+            <div class="bord_row-section_box"></div>
+            <div class="bord_row-section_box"></div>
+            <div class="bord_row-section_box"></div>
+        </section>
+        <section class="bord_row-section">
+            <div class="bord_row-section_box"></div>
+            <div class="bord_row-section_box"></div>
+            <div class="bord_row-section_box"></div>
+        </section>
+        <section class="bord_row-section">
+            <div class="bord_row-section_box"></div>
+            <div class="bord_row-section_box"></div>
+            <div class="bord_row-section_box"></div>
+        </section>  
+    </section>
+    <section class="status-bar">
+        <div class="status-bar_conteiner">
+            <div class ="status-bar_conteiner_x-color"></div>
+            <span>Обозначение - X</span>
+        </div>
+        <div class="status-bar_conteiner">
+            <div class="status-bar_conteiner_o-color"></div>
+            <span>Обозначение - O</span>
+        </div>
+    </section>  
+    <script src="main.js"></script>
+</body>
+</html>
