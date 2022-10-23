@@ -232,6 +232,8 @@ getBeers().then(result => {
             <img src="${beer.image_url}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">${beer.name}</h5>
+                <h6 class="card-title">${beer.tagline}</h6>
+                <h6 class="card-title">First brewed: ${beer.first_brewed}</h6>
                 <p class="card-text">${beer.description}</p>
             </div>
          </div>
