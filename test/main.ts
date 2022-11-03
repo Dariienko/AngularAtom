@@ -328,7 +328,7 @@ const getBeers = async ():Promise<string> => {
 getBeers().then(result => {
     let beersArr:Beer[] =  Convert.toBeer(result) ;
     beersArr.forEach(beer => {
-        conteiner.innerHTML += `
+        conteiner!.innerHTML += `
         <div class ="cardbox_flexbox-card card"{ >
             <img src="${beer.imageURL}" class="card-img-top" alt="...">
             <div class="card-body">
