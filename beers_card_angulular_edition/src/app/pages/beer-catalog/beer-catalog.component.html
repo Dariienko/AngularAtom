@@ -1,0 +1,16 @@
+<ng-container *ngIf="beers?.length; else loading ">
+  <div class ="cardbox_flexbox-card">
+    <div *ngFor= "let beer of beers" class="card" routerLink="{{beer.id}}">
+      <div class="card-image">
+        <img class="card-image" src="{{beer.image_url}}" alt="...">
+      </div>
+      <div class="card-body">
+        <h1 class="card-title">{{beer.name}}</h1>
+      </div>
+    </div>
+  </div>
+</ng-container>
+
+<ng-template #loading>
+  Loading...
+</ng-template>

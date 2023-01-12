@@ -4,15 +4,27 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { BeerDetailsComponent } from './pages/beer-details/beer-details.component'
+import { Route, RouterModule, Routes } from '@angular/router';
+import { BeerCatalogComponent } from './pages/beer-catalog/beer-catalog.component';
+
+const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: 'catalog' },
+  { path: 'catalog', component: BeerCatalogComponent },
+  { path: 'catalog/:id', component: BeerDetailsComponent}
+]
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BeerDetailsComponent,
+    BeerCatalogComponent
   ],
   imports: [
     FormsModule,
     BrowserModule,
+    RouterModule.forRoot(routes),
     AppRoutingModule,
     HttpClientModule,
   ],

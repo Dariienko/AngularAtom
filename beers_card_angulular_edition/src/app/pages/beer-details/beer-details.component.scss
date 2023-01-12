@@ -1,0 +1,34 @@
+.beer_flex-container{
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 500px 700px;
+  grid-column-gap: 30px;
+}
+
+.beer_containter{
+  border: double white;
+  border-radius: 30px;
+  margin: 0 auto;
+  background-color: turquoise;
+  box-shadow: 10px 10px 5px black;
+}
+
+.beer_present{
+  min-width: 350px;
+  text-align: center;
+}
+
+.beer_img{
+  height: 630px;
+}
+
+.beer_about{
+  padding: 0 10px;
+}
+
+h1{
+  text-align: center;
+  font-size: 2rem;
+}
+

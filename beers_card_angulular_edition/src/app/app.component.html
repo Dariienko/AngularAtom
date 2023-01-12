@@ -1,14 +1,1 @@
-<h2>Beer Catalog</h2>
-<div class ="cardbox_flexbox-card">
-  <div *ngFor= "let beer of beers" class="card">
-    <div class="card-image">
-      <img class="card-image" src="{{beer.image_url}}" alt="...">
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">{{beer.name}}</h5>
-      <h6 class="card-title">{{beer.tagline}}</h6>
-      <h6 class="card-title">First brewed: {{beer.first_brewed}}</h6>
-      <p class="card-text">{{beer.description}}</p>
-    </div>
-  </div>
-</div>
+<router-outlet></router-outlet>
