@@ -1,0 +1,38 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 2%;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  width: 300px;
+  height: 480px;
+}
+
+.card-title{
+  text-align: center;
+}
+
+.card-image{
+  margin: 0 auto;
+  width: 130px;
+  height: 330px;
+}
+
+.purchase_btn{
+  width: 200px;
+  height: 30px;
+  border-radius: 5%;
+  background-color: aquamarine;
+  align-self: center;
+  justify-self: end;
+}
+.purchase_btn:hover{
+  background-color: #ffffff;
+  transition: all 0.5s;
+}
+.purchase_btn:focus{
+  background-color: aquamarine;
+  border-color: white;
+  transition: all 0.5s;
+}

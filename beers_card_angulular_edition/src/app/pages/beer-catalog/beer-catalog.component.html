@@ -1,15 +1,8 @@
-<ng-container *ngIf="beers?.length; else loading ">
-  <div class ="cardbox_flexbox-card">
-    <div *ngFor= "let beer of beers" class="card" routerLink="{{beer.id}}">
-      <div class="card-image">
-        <img class="card-image" src="{{beer.image_url}}" alt="...">
-      </div>
-      <div class="card-body">
-        <h1 class="card-title">{{beer.name}}</h1>
-      </div>
-    </div>
-  </div>
-</ng-container>
+<app-header></app-header>
+
+<div  class="cardbox_flexbox-card" *ngIf="beers?.length; else loading " >
+  <app-beer-card [beer]="BEER" (deleteMe)="onBeerDeletion($event)" *ngFor="let BEER of beers"></app-beer-card>
+</div>
 
 <ng-template #loading>
   Loading...

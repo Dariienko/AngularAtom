@@ -1,0 +1,9 @@
+<ng-container *ngIf="(beerCart$|async)?.length">
+  <ul class="beer-cart-containter">
+    <ng-container *ngFor="let beer of beerCart$|async">
+      <li class="beer-cart-unit">
+        <img class="img_beer-cart" src="{{beer.image_url}}" alt=""><div class="text"><span>{{beer.name}}</span></div>
+      </li>
+    </ng-container>
+  </ul>
+</ng-container>

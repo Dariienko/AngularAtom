@@ -1,0 +1,11 @@
+<div class="beer-card" [id]="beer.id">
+  <div class="card">
+    <div class="card-image">
+      <img class="card-image" src="{{beer.image_url}}" routerLink="{{beer.id}}" alt="...">
+    </div>
+    <div class="card-body">
+      <h1 class="card-title">{{beer.name}}</h1>
+    </div>
+    <button class="purchase_btn" (click)="onAddToCartClick()">Add to cart</button>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+*{
+  font-size: 1.5rem;
+}
+
+.beer-cart-containter{
+  display: flex;
+
+  justify-self: center;
+  flex-direction: column;
+}
+.beer-cart-unit{
+  display: inherit;
+  margin: 0 auto;
+  height: 100px;
+  width: 800px;
+  border: white double 1px;
+  background-color: aquamarine;
+  list-style: none;
+}
+.img_beer-cart{
+  align-self: center;
+  margin-left: 20px;
+  height: 80px;
+  width: 40px;
+  background-color: white;
+}
