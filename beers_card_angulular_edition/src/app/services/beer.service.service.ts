@@ -9,14 +9,14 @@ import {BeerCartComponent} from "../pages/beer-cart/beer-cart.component";
 export class BeerServiceService {
 
   cartAmount$ = new BehaviorSubject<number>(+(localStorage.getItem('cartAmount') || 0));
-  cartStorage$ = new BehaviorSubject<any[]>([localStorage.getItem('cartStorage')] || null);
+  cartStorage$ = new BehaviorSubject<any[]>(JSON.parse(localStorage.getItem('cartStorage') || ''));
   readonly rootUrl = 'https://api.punkapi.com/v2/';
 
   constructor(
     private http: HttpClient
   ) {
     this.cartAmount$.subscribe(amount => localStorage.setItem('cartAmount', '' + amount));
-    this.cartStorage$.subscribe(amount => localStorage.setItem('cartStorage', amount.toString()));
+    this.cartStorage$.subscribe(amount => localStorage.setItem('cartStorage',JSON.stringify(amount)));
   }
 
   getBeers(): Observable<any[]>{
